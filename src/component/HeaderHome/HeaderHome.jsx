@@ -20,14 +20,14 @@ export default function HeaderHome() {
         <div className="collapse navbar-collapse" id="collapsibleNavId">
           <ul className="navbar-nav me-auto mt-2 mt-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" href="#" aria-current="page">
+              <NavLink className="nav-link active"to="/" aria-current="page">
                 Home <span className="visually-hidden">(current)</span>
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Link
-              </a>
+              <NavLink className="nav-link" to="/login">
+                login
+              </NavLink>
             </li>
             <li className="nav-item dropdown">
               <a
@@ -42,8 +42,30 @@ export default function HeaderHome() {
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownId">
                 <NavLink className="dropdown-item" to="/usestate">
-                 useState
+                  useState
                 </NavLink>
+                <NavLink className="dropdown-item" to="/demochonxe">
+                  baitapchonxe
+                </NavLink>
+                <NavLink className="dropdown-item" to="/useeffect">
+                  useEffect
+                </NavLink>
+                <NavLink className="dropdown-item" to="/usecallback">
+                  usecallback
+                </NavLink>
+                <NavLink className="dropdown-item" to="/useref">
+                  useref
+                </NavLink>
+                <NavLink className="dropdown-item" to="/useredux">
+                  useredux
+                </NavLink>
+                <NavLink className="dropdown-item" to="/face">
+                  facebook
+                </NavLink>
+                <NavLink className="dropdown-item" to="/democustomhook">
+                  useRoute
+                </NavLink>
+                
                 <a className="dropdown-item" href="#">
                   Action 2
                 </a>
